@@ -64,6 +64,31 @@ resultado = ordenacion_topologica(n, restricciones)
 print("Ejemplo 4: Orden topológico de las tareas:", resultado)
 ```
 
+## Algoritmo para Completar Especificaciones
+
+Este algoritmo encuentra los segmentos en una lista donde cada segmento contiene un máximo local.
+
+### Descripción
+
+El algoritmo `max_segmentos` funciona de la siguiente manera:
+
+1. Itera sobre la lista proporcionada.
+2. Encuentra el final del segmento y el máximo valor en el segmento.
+3. Guarda el segmento encontrado en una lista de segmentos.
+4. Realiza una operación de exploración para reorganizar la lista original y encontrar el siguiente segmento.
+5. Repite este proceso hasta que se hayan encontrado todos los segmentos.
+
+### Ejemplo de Uso
+
+```python
+# Ejemplo de uso
+tabla = [7, 14, 2, 10, 18, 9, 5, 4, 3, 8, 21, 1]
+segmentos = max_segmentos(tabla)
+print("Segmentos encontrados:")
+for inicio, fin in segmentos:
+    print(f"Segmento desde {inicio} hasta {fin} con máximo en t[{inicio}] = {tabla[inicio]}")
+```
+
 ## Link al repositorio de GitHub
 
 https://github.com/AlvaroSantamariaAnton/Ejercicios_Ordenacion_ASA.git
